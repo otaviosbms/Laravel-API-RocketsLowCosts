@@ -25,7 +25,7 @@ php artisan serve
 
 Para realizar a integração com o front-end:
 
-👉 [Link do repositório](https://github.com/otaviosbms/Laravel-API-RocketsLowCosts)
+👉 [Link do repositório](https://github.com/otaviosbms/Vue.js-FrontEnd-RocketsLowCosts)
 
 ##
 
