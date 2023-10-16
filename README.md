@@ -14,6 +14,12 @@ pode colar o seguinte comando em seu terminal
 git clone https://github.com/otaviosbms/Laravel-API-RocketsLowCosts.git
 cd Laravel-API-RocketslowCosts
 ```
+Para o banco de dados SQLite ser criado, crie um aquivo nomeado "database.sqlite" na raiz da pasta Database e rode o seguinte comando no terminal:
+
+```bash
+php artisan migrate
+
+```
 
 Por fim, para executar o projeto basta rodar o seguinte:
 
