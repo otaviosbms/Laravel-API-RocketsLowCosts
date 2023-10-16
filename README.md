@@ -1,3 +1,34 @@
+
+# Laravel-API-RocketsLowCosts
+
+## Requisitos
+
+PHP e composer instalados na maquina
+
+## Instalando
+
+Primeiro, você deve clonar o projeto na sua máquina, para isso você
+pode colar o seguinte comando em seu terminal
+
+```bash
+git clone https://github.com/otaviosbms/Laravel-API-RocketsLowCosts.git
+cd Laravel-API-RocketslowCosts
+```
+
+Por fim, para executar o projeto basta rodar o seguinte:
+
+```bash
+php artisan serve
+```
+
+## Integração com Front-end
+
+Para realizar a integração com o front-end:
+
+👉 [Link do repositório](https://github.com/otaviosbms/Laravel-API-RocketsLowCosts)
+
+##
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
