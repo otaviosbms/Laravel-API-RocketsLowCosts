@@ -14,7 +14,7 @@ class Lancamento extends Model
         'lucro',
     ];
 
-
+   
     public function foguete()
     {
         return $this->belongsTo(Foguete::class);

@@ -16,7 +16,6 @@ class LancamentoController extends Controller
         $foguete = Foguete::find($id);
 
         $existeLancamento = Lancamento::where('foguete_id', $id)
-            ->where('data_de_lancamento', $request->input('data'))
             ->exists();
 
         if ($existeLancamento) {
@@ -47,9 +46,9 @@ class LancamentoController extends Controller
     public function TodosLancamentos()
     {
 
-        $lancamentos = 'pau';
+        $lancamentos = Lancamento::all();
 
-        dd($lancamentos);
+
 
         return response()->json($lancamentos);
     }

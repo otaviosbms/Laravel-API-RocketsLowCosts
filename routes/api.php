@@ -43,4 +43,4 @@ Route::get('/foguetes/{id}', [FogueteController::class, 'UmFoguete'])->name('um.
 // lançamento:
 
 Route::post('/foguetes/lancamento/{id}', [LancamentoController::class, 'CriarLancamento'])->name('criar.lancamento');
-Route::get('/foguetes/lancamento', [LancamentoController::class, 'TodosLancamentos'])->name('todos.lancamentos');
+Route::get('/lancamentos', [LancamentoController::class, 'TodosLancamentos'])->name('todos.lancamentos');
