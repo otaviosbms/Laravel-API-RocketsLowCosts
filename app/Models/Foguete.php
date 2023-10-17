@@ -18,10 +18,7 @@ class Foguete extends Model
         'motor_ver'
     ];
 
-    
-    protected $casts = [
-        'status' => 'boolean',
-    ];
+
 
     public function lancamento(){
         return $this->hasOne(Lancamento::class);

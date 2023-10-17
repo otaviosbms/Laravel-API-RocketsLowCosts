@@ -14,9 +14,6 @@ class Lancamento extends Model
         'lucro',
     ];
 
-    protected $casts = [
-        'status' => 'boolean',
-    ];
 
     public function foguete()
     {

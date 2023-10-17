@@ -13,13 +13,15 @@ return new class extends Migration
     {
         Schema::create('lancamentos', function (Blueprint $table) {
             $table->id();
-            $table->string('foguete_id');
+            $table->integer('foguete_id');
+            $table->string('foguete_nome');
+            $table->string('foguete_imagem');
             $table->date('data_de_lancamento');
-            $table->boolean('status');
             $table->integer('lucro');
             $table->integer('valor');
             $table->integer('faturamento');
             $table->timestamps();
+
 
 
             $table->foreign('foguete_id')->references('id')->on('foguetes')->onDelete('cascade');

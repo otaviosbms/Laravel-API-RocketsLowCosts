@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('foguetes', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->boolean('status');
+            $table->string('status');
             $table->integer('custo');
             $table->string('imagem');
             $table->string('motor_tipo');

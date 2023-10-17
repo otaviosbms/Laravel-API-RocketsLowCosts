@@ -25,25 +25,22 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Login:
 
-Route::post('/login', [LoginController::class,'Login'])->name('login');
+Route::post('/login', [LoginController::class, 'Login'])->name('login');
 
 
 // Usuarios:
 
-Route::post('/login/create', [UserController::class,'CriarUsuario'])->name('criar.usuario');
+Route::post('/login/create', [UserController::class, 'CriarUsuario'])->name('criar.usuario');
 
 
 // Salvar / reotornar dados de foguetes:
 
-Route::get('/foguetes/create', [FogueteController::class,'SalvarFoguetes'])->name('salvar.foguetes');
-Route::get('/foguetes', [FogueteController::class,'TodosFoguetes'])->name('todos.foguetes');
-Route::get('/foguetes/{id}', [FogueteController::class,'UmFoguete'])->name('um.foguete');
+Route::get('/foguetes/create', [FogueteController::class, 'SalvarFoguetes'])->name('salvar.foguetes');
+Route::get('/foguetes', [FogueteController::class, 'TodosFoguetes'])->name('todos.foguetes');
+Route::get('/foguetes/{id}', [FogueteController::class, 'UmFoguete'])->name('um.foguete');
 
 
 // lançamento:
 
-Route::post('/foguetes/lancamento/{id}', [LancamentoController::class,'CriarLancamento'])->name('criar.lancamento');
-Route::get('/foguetes/lancamento', [LancamentoController::class,'TodosLancamentos'])->name('todos.lancamentos');
-
-
-
+Route::post('/foguetes/lancamento/{id}', [LancamentoController::class, 'CriarLancamento'])->name('criar.lancamento');
+Route::get('/foguetes/lancamento', [LancamentoController::class, 'TodosLancamentos'])->name('todos.lancamentos');

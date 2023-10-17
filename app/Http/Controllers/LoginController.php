@@ -22,15 +22,11 @@ class LoginController extends Controller
 
             $token = $user->createToken('token');
 
-            return response()->json($token->plainTextToken);
+            $user = Auth::user();
 
-        }
-        else{
+            return response()->json($token->plainTextToken);
+        } else {
             return response()->json(['message' => 'Usuário não encontrado'], 404);
         }
-
-        
     }
-
-
 }
